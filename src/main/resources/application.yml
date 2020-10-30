@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource    #当前数据源操作类型
+    driver-class-name: com.mysql.jdbc.Driver       #mysql驱动包
+    url: jdbc:mysql//39.101.137.33:3360/hotel_manager?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.cb.springcloud.entities   # 所有Entity别名类所在包
+  
